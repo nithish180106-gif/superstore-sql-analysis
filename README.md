@@ -18,14 +18,13 @@ A relational database + analytical SQL project built on a 3,000-record sample of
 superstore-sql-analysis/
 ├── README.md
 ├── INSIGHTS.md
-├── sql/
-│   ├── 01_schema_and_data.sql      # Creates DB, tables, and loads all data
-│   └── 02_analysis_queries.sql     # 15 business analysis queries
-└── screenshots/
-    ├── 01_overview_results.png
-    ├── 02_category_performance.png
-    ├── 03_regional_performance.png
-    └── ...                        # add your Workbench result screenshots here
+├── 01_schema_and_data.sql          # Creates DB, tables, and loads all data
+├── 02_analysis_queries.sql         # 15 business analysis queries
+├── 01_overview_results.png         # Query result screenshots
+├── 02_category_performance.png
+├── 03_regional_performance.png
+├── 04_top_customers.png
+└── 05_monthly_sales_trend.png
 ```
 
 ## Database Schema
@@ -39,8 +38,8 @@ superstore-sql-analysis/
 | `regional_managers` | Region → manager mapping |
 
 ## How to Run
-1. Open `sql/01_schema_and_data.sql` in MySQL Workbench and execute — creates the database and loads all data.
-2. Open `sql/02_analysis_queries.sql` and run each query to reproduce the results.
+1. Open `01_schema_and_data.sql` in MySQL Workbench and execute — creates the database and loads all data.
+2. Open `02_analysis_queries.sql` and run each query to reproduce the results.
 
 ## Key Findings
 See [`INSIGHTS.md`](./INSIGHTS.md) for the full write-up. Highlights:
@@ -52,19 +51,19 @@ See [`INSIGHTS.md`](./INSIGHTS.md) for the full write-up. Highlights:
 ## Query Results (Screenshots)
 
 **Overview — Total Sales, Profit, Margin**
-![Overview Results](screenshots/01_overview_results.png)
+![Overview Results](01_overview_results.png)
 
 **Category Performance**
-![Category Performance](screenshots/02_category_performance.png)
+![Category Performance](02_category_performance.png)
 
 **Regional Performance**
-![Regional Performance](screenshots/03_regional_performance.png)
+![Regional Performance](03_regional_performance.png)
 
 **Top 10 Customers**
-![Top Customers](screenshots/04_top_customers.png)
+![Top Customers](04_top_customers.png)
 
 **Monthly Sales Trend**
-![Monthly Sales Trend](screenshots/05_monthly_sales_trend.png)
+![Monthly Sales Trend](05_monthly_sales_trend.png)
 
 ---
 *Dataset: Sample Superstore dataset (public retail analytics dataset used widely for SQL/BI practice).*
